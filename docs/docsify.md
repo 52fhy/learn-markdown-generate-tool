@@ -100,7 +100,10 @@ $ docsify serve docs
 
 * [Home](/)
 * [Guide](guide.md)
+* [About](about.md "关于我，这是title tag")
 ```
+括号里可以增加 title tag，通常用于SEO。  
+
 
 保存后需要修改 index.html 添加`loadSidebar: true`以启用左侧菜单：
 ``` js
@@ -120,10 +123,26 @@ window.$docsify = {
 - `subMaxLevel`：配置菜单层级，默认仅显示一级
 - `name`：配置项目名
 - `repo`：配置代码库地址
+- `auto2top`：更改路由时自动滚动到屏幕顶部
 - `search`：配置启用搜索功能。需要加载对应js文件。后面有说明。
 
 效果：
 ![](http://img2018.cnblogs.com/blog/663847/201904/663847-20190420234957125-422911433.png)
+
+
+也可以增加分组菜单，必须用tag键留空格，否则层级是相同的。示例：
+```
+* [首页](/)
+* 开始学习
+	* [loppo](loppo.md "非常简单的静态站点生成器")
+	* [idoc](idoc.md)
+	* [gitbook](gitbook.md)
+	* [docsify](docsify.md)
+* 参考
+```
+
+![](http://img2018.cnblogs.com/blog/663847/201904/663847-20190421100733891-1394730501.png)
+
 
 ### 配置高亮 
 
@@ -162,6 +181,43 @@ search: 'auto'
 ```
 
 无需额外配置。
+
+### 自定义导航栏
+
+参考：https://docsify.js.org/#/custom-navbar
+
+### 主题修改
+
+仅需替换 index.html 里的`vue`：
+``` html
+<link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+```
+
+
+可用的主题：
+``` html 
+<link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+<link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/buble.css">
+<link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/dark.css">
+<link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/pure.css">
+```
+
+其它主题：
+[docsify-themeable](https://jhildenbiddle.github.io/docsify-themeable/#/) ：A delightfully simple theme system for docsify.
+
+参考：https://docsify.js.org/#/themes
+
+### 配置参考
+
+参考：https://docsify.js.org/#/configuration
+
+### 插件参考
+
+参考：https://docsify.js.org/#/plugins
+
+### 发布到GitHub Pages
+
+参考：https://docsify.js.org/#/deploy
 
 ### 示例项目
 
