@@ -98,6 +98,9 @@ GitBook 基本的目录结构如下所示
 * [bookjson](bookjson.md)
 ```
 
+![](http://img2018.cnblogs.com/blog/663847/201904/663847-20190421213336053-208359966.png)
+
+
 ### 配置文件
 
 `book.json` 示例： 
