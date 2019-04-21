@@ -102,29 +102,75 @@ $ docsify serve docs
 * [Guide](guide.md)
 ```
 
-保存后需要修改 index.html 启用左侧菜单：
-``` html
+保存后需要修改 index.html 添加`loadSidebar: true`以启用左侧菜单：
+``` js
 window.$docsify = {
-	  loadSidebar: true,
-	  subMaxLevel: 3,
-      name: '',
-      repo: ''
-    }
+  loadSidebar: true,
+  subMaxLevel: 3,
+  name: '',
+  repo: '',
+  auto2top: true,
+  search: 'auto'
+}
 ```
 
 其中：
 
 - `loadSidebar`：是否显示左侧菜单
-- `subMaxLevel`：配置菜单层级，默认仅显示一级。
+- `subMaxLevel`：配置菜单层级，默认仅显示一级
+- `name`：配置项目名
+- `repo`：配置代码库地址
+- `search`：配置启用搜索功能。需要加载对应js文件。后面有说明。
 
 效果：
 ![](http://img2018.cnblogs.com/blog/663847/201904/663847-20190420234957125-422911433.png)
 
+### 配置高亮 
+
+docsify使用 [`Prism`](https://github.com/PrismJS/prism) 突出显示页面中的代码块。默认情况下，它仅支持CSS，JavaScript和HTML。你可以使用 Prism 加载其他语言：
+
+``` html
+<script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+<script src="//unpkg.com/prismjs/components/prism-bash.min.js"></script>
+<script src="//unpkg.com/prismjs/components/prism-php.min.js"></script>
+<script src="//unpkg.com/prismjs/components/prism-java.min.js"></script>
+<script src="//unpkg.com/prismjs/components/prism-go.min.js"></script>
+<script src="//unpkg.com/prismjs/components/prism-c.js"></script>
+<script src="//unpkg.com/prismjs/components/prism-asm6502.js"></script>
+<script src="//unpkg.com/prismjs/components/prism-makefile.js"></script>
+```
+
+从这个库里获取更多选项支持：https://github.com/PrismJS/prism/tree/gh-pages/components。
+
+### 搜索
+
+修改 index.html ，头部引入：
+``` html
+<script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
+```
+
+然后配置里开启搜索：
+```
+search: 'auto'
+```
+
+### copy-code
+
+如果需要支持代码后面显示复制按钮，可以引入该插件：
+``` html
+<script src="//unpkg.com/docsify-copy-code"></script>
+```
+
+无需额外配置。
 
 ### 示例项目
 
 - 快速入门 - docsify
 https://docsify.js.org/#/quickstart
 
+- 介绍 — Vue.js
+https://cn.vuejs.org/v2/guide/
+
 - Linux C 编程一站式学习
 http://me.52fhy.com/linux-c/#/
+
