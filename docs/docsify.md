@@ -112,6 +112,11 @@ window.$docsify = {
     }
 ```
 
+其中：
+
+- `loadSidebar`：是否显示左侧菜单
+- `subMaxLevel`：配置菜单层级，默认仅显示一级。
+
 效果：
 ![](http://img2018.cnblogs.com/blog/663847/201904/663847-20190420234957125-422911433.png)
 
