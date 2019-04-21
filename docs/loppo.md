@@ -1,8 +1,15 @@
 ﻿
-
+# loppo
 官网： https://github.com/ruanyf/loppo
 
-> 依赖 node.js 环境。原理是将 Markdown 文件编译生成 html 文件。
+> 依赖 node.js 环境。
+
+
+特点：
+1、简单小巧，支持自动生成目录。
+2、不支持插件。
+3、原理是将 Markdown 文件编译生成 html 文件。
+4、生成的页面很美观、大方，支持响应式。
 
 ### 安装
 

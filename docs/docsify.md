@@ -1,8 +1,15 @@
 ﻿
+# docsify
+
 官网： https://docsify.js.org/#/  
 代码块：https://github.com/docsifyjs/docsify  
 
 > 依赖 node.js 环境。
+
+特点：  
+1、扩展性非常好，有社区支持。支持插件。  
+2、目录需要手动配置。  
+3、发布无需编译生成 html，动态解析 md 文件。  
 
 ### 安装
 

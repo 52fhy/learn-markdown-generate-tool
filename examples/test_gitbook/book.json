@@ -1,0 +1,11 @@
+{
+    "title": "Go Web编程",
+    "description": "build-web-application-with-golang",
+    "author": "谢孟军",
+    "output.name": "build-web-application-with-golang-zh",
+	"pdf":{
+		"fontSize":14,
+		"fontFamily":"AR PL UKai CN"
+	},
+	"plugins": ["auto-summary-follow"]
+}

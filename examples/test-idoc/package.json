@@ -1,0 +1,27 @@
+{
+    "name": "test-idoc",
+    "version": "1.0.0",
+    "description": "",
+    "keywords": [
+        ""
+    ],
+    "homepage": "http://JSLite.io",
+    "author": "yujc",
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "licenses": "GPL",
+    "idoc": {
+        "theme": "default",
+        "md": [
+            "首页.md",
+            {
+                "使用方法": [
+                    "命令文档.md"
+                ]
+            },
+            "关于.md"
+        ]
+    }
+}
