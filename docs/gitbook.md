@@ -60,7 +60,7 @@ gitbook serve
 gitbook build
 ```
 
-# 目录结构
+### 目录结构
 
 GitBook 基本的目录结构如下所示
 ```
