@@ -1,32 +1,35 @@
-# lua-book
+# 前言
+主要记录 GitBook 的安装配置以及一些插件信息，当前使用的 GitBook 版本为 `3.2.3`。
 
-Lua脚本学习
-===========
+推荐一下 [docsify](https://github.com/QingWei-Li/docsify)，相当于一个精简的 GitBook，不需要编译，使用很方便。[这里](https://github.com/zhangjikai/docsify) 基于 doscify 做了一些修改，具体的效果可以看一下 [在线的示例](http://doc.zhangjikai.com/#/) .
 
-![lua](images/lua25.jpg)
+## 运行
+* 安装 GitBook
+```bash
+npm install gitbook-cli -g
+```
+* Clone 代码到本地并运行
+```bash
+git clone git@github.com:zhangjikai/gitbook-use.git
+cd gitbook-use
+gitbook install
+gitbook serve
+```
+* 在浏览器中打开 `http://localhost:4000/` 进行访问
 
-Lua 是一个小巧的脚本语言。  
+## 目录
+* [安装](installation.md)
+* [命令](commands.md)
+* [目录结构](structure.md)
+* [配置](settings.md)
+* [插件](plugins.md)
+* [主题](themes.md)
+* [bookjson](bookjson.md)
 
-是巴西里约热内卢天主教大学（Pontifical Catholic University of Rio de Janeiro）里的一个研究小组，由Roberto Ierusalimschy、Waldemar Celes 和 Luiz Henrique de Figueiredo所组成并于1993年开发。其设计目的是为了嵌入应用程序中，从而为应用程序提供灵活的扩展和定制功能。   
+## GitBook 资源
 
-Lua 有一个同时进行的JIT项目，提供在特定平台上的即时编译功能。
-
-Lua脚本可以很容易的被C/C++ 代码调用，也可以反过来调用C/C++的函数，这使得Lua在应用程序中可以被广泛应用。不仅仅作为扩展脚本，也可以作为普通的配置文件，代替XML,ini等文件格式，并且更容易理解和维护。 
-
-Lua由标准C编写而成，代码简洁优美，几乎在所有操作系统和平台上都可以编译，运行。一个完整的Lua解释器不过200k，在目前所有脚本引擎中，Lua的速度是最快的。这一切都决定了Lua是作为嵌入式脚本的最佳选择。
-
-点击右上角的 **[Watch](https://github.com/52fhy/lua-book/subscription)** 订阅本书，点击 Star 收藏本书。
-
-- [issue](https://github.com/52fhy/lua-book/issues)
-
-
-
-[开始阅读：Lua脚本学习--入门](chapter1.md)
-
-
-## 打赏作者
-
-欢迎微信扫码打赏我，感谢支持！
-
-![打赏作者](wechat.png)
-
+* [GitBook主页](https://www.gitbook.com/)
+* [Github地址](https://github.com/GitbookIO/)
+* [GitBook编辑器](https://www.gitbook.com/editor/osx)
+* [GitBook Toolchain Documentation](http://toolchain.gitbook.com/)
+* [GitBook Documentation](http://help.gitbook.com/)

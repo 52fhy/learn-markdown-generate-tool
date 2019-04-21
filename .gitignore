@@ -1,4 +1,5 @@
 examples/test_gitbook/node_modules/
+examples/test_gitbook/_book/
 ./idea
 *.epub
 *.mobi
